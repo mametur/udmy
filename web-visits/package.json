@@ -1,0 +1,16 @@
+{
+  "name": "web-visits",
+  "version": "1.0.0",
+  "description": "Docker node application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Mame Azad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "redis": "2.8.0"
+  }
+}

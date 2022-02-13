@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:  #first container host development server
+    build: 
+      context: . # look current directory and find file with DockerFiledev
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules  # when rerun or update codes to update browser cause 
+      - .:/app              # when add some codes our container does not have them 
+  tests: # second container for run testing
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    command: ["npm", "run", "test"]
+    

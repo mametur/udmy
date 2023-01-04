@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Some docker commands
+
+The below command use volumes to help you working on development env. When you changes something in the files and it will reflect it to on running server without rebuild the container  
+
+```bash
+ docker run -p 3000:3000 -v/app/node_modules -v$(pwd):/app <image_id>
+```
+![docker commands](./public/docker-com.png)

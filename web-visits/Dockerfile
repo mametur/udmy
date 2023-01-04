@@ -2,7 +2,7 @@
 
 FROM node:alpine
 
-WORKDIR /usr/app/docker-node-app
+WORKDIR /usr/app
 
 COPY ./package.json .
 # Dowload and install a dependency

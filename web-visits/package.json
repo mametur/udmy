@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "run:docker": "docker-compose up --build"
+    "docker": "docker-compose up --build"
   },
-  "author": "Mame Azad",
+  "author": "Mamé",
   "license": "ISC",
   "dependencies": {
     "express": "*",

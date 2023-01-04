@@ -1,9 +1,9 @@
 version: '3'
-services:
+services: #containers
   redis-server:
     image: 'redis'
-  node-app:
+  visits-app:
     restart: always
-    build: .
+    build: . # use Dockerfile from root directory
     ports:
-      - "8081:8081"
+      - "4001:8081"
